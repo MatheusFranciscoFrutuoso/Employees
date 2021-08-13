@@ -9,6 +9,6 @@ namespace Data.Models
     public class Team : Base
     {
         public string Description { get; set; }
-      // List<Employees> Member { get; set; }
+        public List<Employees> Member { get; set; }
     }
 }
