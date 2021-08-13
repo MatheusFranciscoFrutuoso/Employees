@@ -31,7 +31,7 @@ namespace Data.Repository
             T model = Activator.CreateInstance<T>();
             using (var context = new EmployeesDb())
             {
-                context.Set<T>().Find(id);
+                model = context.Set<T>().Find(id);
             }
             return model;
         }
