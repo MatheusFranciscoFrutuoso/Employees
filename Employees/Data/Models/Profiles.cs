@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Data.Models
 {
-    class Profiles : Base
+    public class Profiles : Base
     {
         public string AcessLevel { get; set; }
         public string Description { get; set; }
