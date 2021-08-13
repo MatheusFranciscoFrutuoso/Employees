@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Data.Repository
 {
-    class PositionRepository:BaseRepository<Position>
+    public class PositionRepository : BaseRepository<Position>
     {
 
         Position position = new Position();
@@ -16,7 +16,7 @@ namespace Data.Repository
 
 
 
-        public void setPosition( int id_Employee, int id_Position)
+        public void setPosition(int id_Employee, int id_Position)
         {
 
             RepositoryEmployees repor = new RepositoryEmployees();
