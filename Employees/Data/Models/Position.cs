@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Data.Models
 {
-    public class PositionModel :Base
+    public class Position :Base
     {
         public Profiles AcessLevel { get; set; }
     }
