@@ -15,6 +15,7 @@ namespace Data.Repository
             using(var context = new EmployeesDb())
             {
                 context.Set<T>().Add(model);
+                context.SaveChanges();
             }
         }
         public List<T> Read()
@@ -40,6 +41,7 @@ namespace Data.Repository
             using (var context = new EmployeesDb())
             {
                 context.Entry<T>(model).State = System.Data.Entity.EntityState.Modified;
+                context.SaveChanges();
             }
         }
 
