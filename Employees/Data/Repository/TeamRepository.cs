@@ -22,7 +22,7 @@ namespace Data.Repository
             public void RemoveMember(int id_Employee)
             {
                 employ = empRepo.Read(id_Employee);
-                //teams = this.Read(employ.Team.Id);
+                teams = this.Read(employ.Team.Id);
                 teams.Member.Remove(employ);
             }
             public void TransferMember(int id_Employee, int id_Team)
