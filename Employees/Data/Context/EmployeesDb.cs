@@ -14,6 +14,7 @@ namespace Data.Context
         public DbSet<Profiles> Profiles { get; set; }
         public DbSet<Position> Position { get; set; }
         public DbSet<Employees> Employees { get; set; }
+        public DbSet<Team> Team { get; set; }
         public EmployeesDb():base ("Data Source=192.168.0.114;Initial Catalog=Employees;Persist Security Info=True;User ID=Employees;Password=projetox")
         {
 
