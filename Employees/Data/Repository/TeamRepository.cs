@@ -17,13 +17,13 @@ namespace Data.Repository
             {
                 teams = this.Read(id_Team);
                 employ = empRepo.Read(id_Employee);
-                teams.Member.Add(employ);
+                //teams.Member.Add(employ);
             }
             public void RemoveMember(int id_Employee)
             {
                 employ = empRepo.Read(id_Employee);
                 //teams = this.Read(employ.Team.Id);
-                teams.Member.Remove(employ);
+                //teams.Member.Remove(employ);
             }
             public void TransferMember(int id_Employee, int id_Team)
             {
